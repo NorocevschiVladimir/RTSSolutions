@@ -1,0 +1,294 @@
+@font-face {
+  font-family: 'Avenir';
+  src: url("/fonts/Avenir-Book.woff2") format("woff2"), url("/fonts/Avenir-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/fonts/Avenir-Medium.woff2") format("woff2"), url("/fonts/Avenir-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/fonts/Avenir-Heavy.woff2") format("woff2"), url("/fonts/Avenir-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/fonts/Avenir-Light.woff2") format("woff2"), url("/fonts/Avenir-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/fonts/Avenir-Roman.woff2") format("woff2"), url("/fonts/Avenir-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("/fonts/Avenir-Black.woff2") format("woff2"), url("/fonts/Avenir-Black.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+div,
+a,
+span,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input {
+  font-family: "Avenir", sans-serif;
+  font-weight: 400;
+  color: #959595;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+li {
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  background-image: url("/image/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 100vh;
+}
+
+.section {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section .card {
+  max-width: 540px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section .card .card-header {
+  border-bottom: none;
+  background-color: #fff;
+  padding: .75rem 1.25rem;
+}
+
+.section .card .card-header h3 {
+  text-align: center;
+}
+
+.section .card .card-header p {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.section .card hr {
+  margin: 5px 10%;
+}
+
+.section .card .card-body {
+  padding: .75rem 1.25rem 1.0625rem;
+}
+
+.section .card .card-body form {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section .card .card-body form .group {
+  margin-bottom: .8rem;
+}
+
+.section .card .card-body form h6 {
+  font-size: 18px;
+  margin-bottom: .3rem;
+}
+
+.section .card .card-body form .form-group {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.section .card .card-body form .form-group:focus-within {
+  border-color: #00bcff;
+  -webkit-box-shadow: 0 0 10px 1px #00bcff;
+          box-shadow: 0 0 10px 1px #00bcff;
+}
+
+.section .card .card-body form .form-group label {
+  display: block;
+  margin-bottom: 0;
+  margin-right: 10px;
+  border: 0;
+  border-right: 4px solid #ccc;
+  padding-right: 10px;
+  border-style: solid dotted;
+}
+
+.section .card .card-body form .form-group input,
+.section .card .card-body form .form-group textarea {
+  border: none;
+  width: 100%;
+  padding: 0 5px;
+}
+
+.section .card .card-body form .send {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: #006ede;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.section .card .card-body form .send:hover {
+  -webkit-box-shadow: 0 0 10px 1px #00bcff;
+          box-shadow: 0 0 10px 1px #00bcff;
+  cursor: pointer;
+}
+
+.answer-section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.answer-section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
+.answer-section .content .title {
+  font-weight: bold;
+  color: #5c5c5c;
+}
+
+.answer-section .content .symbol {
+  -webkit-text-stroke: 13px white;
+  font-size: 150px;
+  color: #37b20a;
+}
+
+.answer-section .content .text {
+  margin-top: 15px;
+  font-size: 25px;
+  color: #e07202;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.answer-section .content .home-link {
+  background: #00bcff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 260px;
+  text-align: center;
+  margin: 20px auto 0;
+  font-size: 25px;
+  -webkit-animation: scale 2s ease-in-out infinite;
+          animation: scale 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .section .card .card-header {
+    padding: .75rem .5rem;
+  }
+}
+
